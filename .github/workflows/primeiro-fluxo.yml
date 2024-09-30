@@ -20,6 +20,8 @@ on:
 jobs:
   job1:
     name: Primeira tarefa
+    # para executar esta primeira tarefa, somente após a segunda
+    needs: job2
     runs-on: ubuntu-latest  # máquina virtual linux pra rodar as tarefas
     # vamos incluir alguns passos para o primeiro job
     steps:
